@@ -1,0 +1,73 @@
+## .gitignore generico para proyectos .NET / ASP.NET Core / Visual Studio / Rider / VS Code
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Xx]86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.svclog
+*.scc
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+*.[Cc]ache
+
+# Rider / IntelliJ / ReSharper
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Local development secrets / user secrets
+appsettings.Development.json
+appsettings.Local.json
+*.user.json
+*.secret
+
+# SQL Server LocalDB / mdf
+*.mdf
+*.ldf
+*.ndf
+
+# MSTest / xUnit / NUnit
+TestResults/
+*.trx
+*.coverage
+
+# ILMerge / Fody / etc
+FodyWeavers.xsd
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
