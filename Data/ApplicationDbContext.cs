@@ -3,48 +3,25 @@ using Sistema_Control_Taller_Bicicletas.Models;
 
 namespace Sistema_Control_Taller_Bicicletas.Data
 {
-    // Clase central de Entity Framework Core. Es nuestro "puente" entre C# y SQL Server.
-    // Por cada modelo que agreguemos al proyecto deberemos declarar un DbSet<> aquí para
-    // que EF le genere tablas, migraciones, queries, etc.
     public class ApplicationDbContext : DbContext
     {
-        // Constructor con inyección de opciones. El Program.cs le pasa la cadena de
-        // conexión + el provider SQL Server, y el DbContext base se encarga de todo lo demás.
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
 
-        // Cada DbSet se mapea 1 a 1 con una tabla física en la base de datos.
-        // "Clientes" y "Bicicletas" son los nombres que usaré en los controllers para
-        // hacer LINQ (_context.Clientes.Where(...)).
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Bicicleta> Bicicletas { get; set; }
 
-        // Configuración a nivel de modelo: relaciones, restricciones, y datos iniciales.
-        // EF Core llama a este método una sola vez al arrancar la aplicación.
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Relación 1 a N explícita entre Cliente y Bicicleta:
-            //   Cliente => muchas Bicicletas
-            //   Bicicleta => un Cliente (por medio de ClienteId)
-            // Borro en cascada: si elimino a un cliente, también se van todas sus bicis
-            // (evita huérfanos en la tabla Bicicletas). En producción muchas veces se
-            // prefiere DeleteBehavior.Restrict para evitar borrados accidentales.
             modelBuilder.Entity<Cliente>()
                 .HasMany(c => c.Bicicletas)
                 .WithOne(b => b.Cliente)
                 .HasForeignKey(b => b.ClienteId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // --------------------------------------------------
-            // SEED DATA: datos iniciales para clientes + bicicletas
-            // --------------------------------------------------
-            // Uso HasData() para que en la primera migración (o al ejecutar database
-            // update) la base quede con 3 clientes y 5 bicicletas de demostración.
-            // Al usar migraciones, EF compara lo que ya existe con estos registros y
-            // solo inserta los que faltan (idempotente).
-
+            // Datos iniciales de ejemplo.
             modelBuilder.Entity<Cliente>().HasData(
                 new Cliente
                 {
