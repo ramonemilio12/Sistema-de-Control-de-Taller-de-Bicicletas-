@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema-Control-Taller-Bicicletas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+497fc7cefd4a8274fba9e343f8544a78b2f85d94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beff723e02a42644517456c9f70fe66226e692b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema-Control-Taller-Bicicletas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema-Control-Taller-Bicicletas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
