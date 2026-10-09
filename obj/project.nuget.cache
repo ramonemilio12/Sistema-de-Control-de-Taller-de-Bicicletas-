@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j8GzIhvHNfU=",
+  "dgSpecHash": "L6IMmv2uMZY=",
   "success": true,
-  "projectFilePath": "c:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj",
+  "projectFilePath": "C:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\blake\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\blake\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

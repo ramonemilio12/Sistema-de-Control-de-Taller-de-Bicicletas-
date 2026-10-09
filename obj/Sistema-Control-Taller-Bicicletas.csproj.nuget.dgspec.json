@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj": {}
+    "C:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj": {}
   },
   "projects": {
-    "c:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj": {
+    "C:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj",
+        "projectUniqueName": "C:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj",
         "projectName": "Sistema-Control-Taller-Bicicletas",
-        "projectPath": "c:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj",
+        "projectPath": "C:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\Sistema-Control-Taller-Bicicletas.csproj",
         "packagesPath": "C:\\Users\\blake\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\obj\\",
+        "outputPath": "C:\\Users\\blake\\Downloads\\Sistema-de-Control-de-Taller-de-Bicicletas-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\blake\\AppData\\Roaming\\NuGet\\NuGet.Config"
